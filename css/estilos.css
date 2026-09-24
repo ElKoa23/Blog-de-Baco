@@ -3,3 +3,5 @@
   box-sizing: 0;
   margin: 0;
 }
+.header-galeria ul li a{text-decoration: none;}
+.mai-galeria div img {width: 200px; }
