@@ -7,3 +7,9 @@
   object-fit: cover;
   height: 50vh;
 }
+
+.img-entrada {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+}
