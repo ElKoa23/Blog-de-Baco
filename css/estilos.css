@@ -96,3 +96,16 @@ p {
   background-color: #7b1831;
   color: white;
 }
+
+
+.footer {max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;}
+  .img-footer img {width: 200px
+    ;}
+    .footer-col {font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 600;}
