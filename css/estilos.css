@@ -1,15 +1,19 @@
 * {
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
 }
-.header-galeria ul li a {
-  text-decoration: none;
-}
-.mai-galeria div img {
-  width: 200px;
+
+.img-carousel img {
+  object-fit: cover;
+  height: 50vh;
 }
 
+.img-entrada {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+}
 /* Galeria */
 .portada-galeria {
   position: relative;
