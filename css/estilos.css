@@ -36,16 +36,10 @@
   color: white;
 }
 
-.galeria-img {
+.tarjeta-galeria img {
   width: 100%;
   height: 300px;
   object-fit: contain;
-}
-
-h1 {
-  text-align: center;
-  color: #7b1831;
-  margin: 30px 0;
 }
 
 .texto-portada h1 {
@@ -53,7 +47,7 @@ h1 {
   margin: 0;
 }
 
-h3 {
+.tarjeta-galeria h3 {
   font-size: 20px;
   margin-top: 12px;
   color: #7b1831;
@@ -97,15 +91,30 @@ p {
   color: white;
 }
 
+/* CONTACTO */
 
-.footer {max-width: 1200px;
+.titulo-contacto h1 {
+  color: #7b1831;
+}
+
+.boton-vino {
+  background-color: #7b1831;
+  color: white;
+}
+
+.footer {
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;}
-  .img-footer img {width: 200px
-    ;}
-    .footer-col {font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+.img-footer img {
+  width: 200px;
+}
+.footer-col {
+  font-size: 0.95rem;
   margin-bottom: 1rem;
-  font-weight: 600;}
+  font-weight: 600;
+}
