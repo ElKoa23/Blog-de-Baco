@@ -129,3 +129,10 @@ p {
   margin-bottom: 1rem;
   font-weight: 600;
 }
+.img-carrusel-cata{
+  height: 50vh;
+}
+.img-carrusel-cata img {
+  object-fit: cover;
+  height: 50vh;
+}
