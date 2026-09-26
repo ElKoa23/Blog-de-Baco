@@ -1,7 +1,120 @@
-*{
+* {
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
 }
-.header-galeria ul li a{text-decoration: none;}
-.mai-galeria div img {width: 200px; }
+
+.img-carousel img {
+  object-fit: cover;
+  height: 50vh;
+}
+
+.img-entrada {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+}
+/* Galeria */
+.portada-galeria {
+  position: relative;
+  height: 400px;
+}
+
+.portada-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.texto-portada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.tarjeta-galeria img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.texto-portada h1 {
+  color: white;
+  margin: 0;
+}
+
+.tarjeta-galeria h3 {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #7b1831;
+}
+
+p {
+  font: size 14px;
+  color: black;
+}
+
+.texto-portada p {
+  color: white;
+  margin-top: 10px;
+}
+
+.tarjeta-galeria {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.categorias button {
+  background-color: white;
+  border: 1px solid #7b1831;
+  color: #7b1831;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.categorias button:hover {
+  background-color: #7b1831;
+  color: white;
+}
+
+/* CONTACTO */
+
+.titulo-contacto h1 {
+  color: #7b1831;
+}
+
+.boton-vino {
+  background-color: #7b1831;
+  color: white;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.img-footer img {
+  width: 200px;
+}
+.footer-col {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
