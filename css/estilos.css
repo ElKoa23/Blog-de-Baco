@@ -54,7 +54,7 @@
 }
 
 p {
-  font: size 14px;
+  font-size: 14px;
   color: black;
 }
 
@@ -172,15 +172,10 @@ ul {
   }
 }
 
-
 :root {
   --vino: #7b1831;
   --vino-oscuro: #4a1c24;
   --vino-claro: #f3e9ea;
-}
-
-.fondo-acceso {
-  background-color: var(--vino-claro);
 }
 
 a {
@@ -208,4 +203,79 @@ a:hover {
 .panel-vino p {
   color: #ffffff;
   opacity: 0.85;
+}
+
+/* Página de error 404  */
+.pagina-error {
+  background:
+    radial-gradient(circle at top, rgba(123, 24, 49, 0.12), transparent 52%),
+    var(--vino-claro);
+  color: #2f2024;
+}
+
+.error-contenido {
+  width: min(100%, 42rem);
+  padding: clamp(2rem, 6vw, 4rem);
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(123, 24, 49, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 1.25rem 3rem rgba(74, 28, 36, 0.14);
+}
+
+.error-marca {
+  color: var(--vino);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.error-copa {
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 1;
+}
+
+.error-numero {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(5rem, 18vw, 9rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.error-titulo {
+  margin-top: 1rem;
+  color: var(--vino-oscuro);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+}
+
+.pagina-error .error-descripcion {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: #5f5054;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.pagina-error .btn-error {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--vino);
+  border: 1px solid var(--vino);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pagina-error .btn-error:hover,
+.pagina-error .btn-error:focus-visible {
+  background-color: var(--vino-oscuro);
+  border-color: var(--vino-oscuro);
+  color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .error-contenido {
+    padding: 2rem 1.25rem;
+    border-radius: 1rem;
+  }
 }
