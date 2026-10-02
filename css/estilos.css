@@ -178,20 +178,24 @@ ul {
   --vino-claro: #f3e9ea;
 }
 
-a {
+.fondo-acceso {
+  background-color: var(--vino-claro);
+}
+
+.fondo-acceso a {
   color: var(--vino);
 }
 
-a:hover {
+.fondo-acceso a:hover {
   color: var(--vino-oscuro);
 }
 
-.btn-primary {
+.fondo-acceso .btn-primary {
   background-color: var(--vino);
   border-color: var(--vino);
 }
 
-.btn-primary:hover {
+.fondo-acceso .btn-primary:hover {
   background-color: var(--vino-oscuro);
   border-color: var(--vino-oscuro);
 }
@@ -222,22 +226,12 @@ a:hover {
   box-shadow: 0 1.25rem 3rem rgba(74, 28, 36, 0.14);
 }
 
-.error-marca {
-  color: var(--vino);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .error-copa {
   font-size: clamp(3rem, 10vw, 6rem);
   line-height: 1;
 }
 
 .error-numero {
-  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(5rem, 18vw, 9rem);
   font-weight: 700;
   line-height: 1;
@@ -246,7 +240,6 @@ a:hover {
 .error-titulo {
   margin-top: 1rem;
   color: var(--vino-oscuro);
-  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.75rem, 5vw, 2.75rem);
 }
 
@@ -271,6 +264,17 @@ a:hover {
   background-color: var(--vino-oscuro);
   border-color: var(--vino-oscuro);
   color: #ffffff;
+}
+
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: 65vh;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 @media (max-width: 575.98px) {
