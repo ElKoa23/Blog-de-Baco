@@ -272,7 +272,7 @@ ul {
 
 .imagen-login {
   width: 100%;
-  height: 65vh;
+  height: auto;
   max-height: 600px;
   object-fit: cover;
 }

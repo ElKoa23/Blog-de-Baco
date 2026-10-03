@@ -17,11 +17,9 @@
       <!-- NavBar Genérico -->
       <h2>Navbar</h2>
     </header>
-    <main class="container-fluid">
-      <div class="row min-vh-100">
-        <section
-          class="col-12 col-lg-7 d-flex align-items-center justify-content-center p-4"
-        >
+    <main class="container">
+      <div class="row">
+        <section class="col-12 col-lg-6 d-flex justify-content-center">
           <div class="formulario-login w-100">
             <h1 class="h2">Bienvenido de nuevo</h1>
             <p>Ingresá tus datos para acceder a tu cuenta</p>
@@ -54,7 +52,7 @@
               </div>
 
               <div
-                class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3"
+                class="d-flex justify-content-between align-items-center mb-3"
               >
                 <div class="form-check">
                   <input
@@ -68,7 +66,14 @@
                   </label>
                 </div>
 
-                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                <button
+                  type="button"
+                  class="btn btn-link p-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRecuperar"
+                >
+                  ¿Olvidaste tu contraseña?
+                </button>
               </div>
 
               <button type="submit" class="btn btn-danger w-100">
@@ -78,14 +83,14 @@
 
             <p class="text-center my-4">O continuá con</p>
 
-            <div class="row g-2">
-              <div class="col-6">
+            <div class="row">
+              <div class="col-12 col-lg-6">
                 <button type="button" class="btn btn-outline-secondary w-100">
                   Google
                 </button>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <button type="button" class="btn btn-outline-secondary w-100">
                   Facebook
                 </button>
@@ -98,7 +103,7 @@
         </section>
 
         <!-- La imagen se oculta en celulares y aparece junto al formulario desde pantallas grandes. -->
-        <aside class="col-lg-4 d-none d-lg-flex align-items-center p">
+        <aside class="col-12 col-lg-6 d-none d-lg-block">
           <div class="card bg-dark text-white w-100">
             <img
               src="https://plus.unsplash.com/premium_photo-1719997502353-88e25b8f266c?w=800&auto=format&fit=crop&q=80"
@@ -118,14 +123,61 @@
         </aside>
       </div>
     </main>
+    <!-- Modal para recuperar contraseña -->
+    <div
+      class="modal fade"
+      id="modalRecuperar"
+      aria-labelledby="tituloRecuperar"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="tituloRecuperar">
+              Recuperar contraseña
+            </h2>
 
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Ingresá tu correo para solicitar un enlace con el que puedas crear
+              una nueva contraseña.
+            </p>
+
+            <form id="form-recuperar">
+              <div class="mb-3">
+                <label for="email-recuperar" class="form-label">
+                  Correo electrónico
+                </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-recuperar"
+                  name="email"
+                  placeholder="nombre@correo.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-danger w-100">
+                Enviar enlace
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Inicio del Footer -->
     <footer></footer>
     <!-- Scripts Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
