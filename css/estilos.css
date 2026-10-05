@@ -42,6 +42,7 @@
   object-fit: contain;
 }
 
+
 .texto-portada h1 {
   color: white;
   margin: 0;
@@ -92,7 +93,7 @@ p {
 }
 
 /* CONTACTO */
-
+ 
 .titulo-contacto h1 {
   color: #7b1831;
 }
@@ -101,42 +102,55 @@ p {
   background-color: #7b1831;
   color: white;
 }
-
-.footer {
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  background-color: #7b1831;
+/* footer */
+ .body-footer{width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+background-color: #7b1831;
   color: white;
+  margin: 0 auto;
 }
-.footer-enlace {
+.footer { width: 100%;
+  max-width: none;
+  margin: 0 auto;
+
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #7b1831;
 }
 .img-footer img {
-  border-radius: 25px;
+  width: 200px;
+}
+
+
+.footer-enlace{display: flex;
+  flex-direction: column}
+.img-footer img {border-radius: 25px;
   width: 100px;
 }
 
-.footer-enlace ul li a {
+.footer-enlace ul li a { 
   text-decoration: none;
   color: white;
 }
-.footer-enlace2 {
-  display: flex;
-  flex-direction: row;
-}
+.footer-enlace2 { display: flex; 
+  flex-direction: row;}
 .footer-hiper ul li a svg {
   color: white;
 }
 
-.footer .flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.centrado {
-  display: flex;
+.footer h4 {color: white;}
+.footer h6 {color: white;}
+.centrado {display: flex;
   flex-direction: column;
   text-align: center;
 }
@@ -147,139 +161,21 @@ ul {
 .footer-col {
   color: white;
 }
-.img-carrusel-cata {
-  height: 50vh;
-}
-.img-carrusel-cata img {
-  object-fit: cover;
-  height: 50vh;
-}
 .footer p {
   color: white;
 }
 .lista-hiper ul {
-  display: flex;
+  display: flex; 
   flex-direction: row;
   gap: 10px;
 }
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
   .footer {
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-between;
     text-align: left;
     padding: 30px;
   }
-}
-
-:root {
-  --vino: #7b1831;
-  --vino-oscuro: #4a1c24;
-  --vino-claro: #f3e9ea;
-}
-
-.fondo-acceso {
-  background-color: var(--vino-claro);
-}
-
-.fondo-acceso a {
-  color: var(--vino);
-}
-
-.fondo-acceso a:hover {
-  color: var(--vino-oscuro);
-}
-
-.fondo-acceso .btn-primary {
-  background-color: var(--vino);
-  border-color: var(--vino);
-}
-
-.fondo-acceso .btn-primary:hover {
-  background-color: var(--vino-oscuro);
-  border-color: var(--vino-oscuro);
-}
-
-.panel-vino {
-  background-color: var(--vino-oscuro);
-}
-
-.panel-vino p {
-  color: #ffffff;
-  opacity: 0.85;
-}
-
-/* Página de error 404  */
-.pagina-error {
-  background:
-    radial-gradient(circle at top, rgba(123, 24, 49, 0.12), transparent 52%),
-    var(--vino-claro);
-  color: #2f2024;
-}
-
-.error-contenido {
-  width: min(100%, 42rem);
-  padding: clamp(2rem, 6vw, 4rem);
-  background-color: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(123, 24, 49, 0.18);
-  border-radius: 1.5rem;
-  box-shadow: 0 1.25rem 3rem rgba(74, 28, 36, 0.14);
-}
-
-.error-copa {
-  font-size: clamp(3rem, 10vw, 6rem);
-  line-height: 1;
-}
-
-.error-numero {
-  font-size: clamp(5rem, 18vw, 9rem);
-  font-weight: 700;
-  line-height: 1;
-}
-
-.error-titulo {
-  margin-top: 1rem;
-  color: var(--vino-oscuro);
-  font-size: clamp(1.75rem, 5vw, 2.75rem);
-}
-
-.pagina-error .error-descripcion {
-  max-width: 32rem;
-  margin-top: 1rem;
-  color: #5f5054;
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
-.pagina-error .btn-error {
-  padding: 0.75rem 1.5rem;
-  background-color: var(--vino);
-  border: 1px solid var(--vino);
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.pagina-error .btn-error:hover,
-.pagina-error .btn-error:focus-visible {
-  background-color: var(--vino-oscuro);
-  border-color: var(--vino-oscuro);
-  color: #ffffff;
-}
-
-.formulario-login {
-  max-width: 420px;
-}
-
-.imagen-login {
-  width: 100%;
-  height: 65vh;
-  max-height: 600px;
-  object-fit: cover;
-}
-
-@media (max-width: 575.98px) {
-  .error-contenido {
-    padding: 2rem 1.25rem;
-    border-radius: 1rem;
-  }
-}
+} */
