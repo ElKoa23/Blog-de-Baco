@@ -266,6 +266,11 @@ ul {
   color: #ffffff;
 }
 
+/* LOGIN */
+
+.Titulo-login {
+  color: #7b1831;
+}
 .formulario-login {
   max-width: 420px;
 }
