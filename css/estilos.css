@@ -100,7 +100,7 @@ p {
 .boton-vino {
   background-color: #7b1831;
   color: white;
-<<<<<<< HEAD
+
 }
 
 /* Sobre nosotros */
@@ -124,7 +124,7 @@ text-decoration: none;
   object-fit: cover;      
 }
 
->>>>>>> origin/dev
+origin/dev
 /* footer */
 .footer {
   width: 100%;
