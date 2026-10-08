@@ -271,7 +271,23 @@ ul {
 .pagina-error .btn-error:hover {
   background-color: var(--vino-oscuro);
   border-color: var(--vino-oscuro);
-  color: white;
+  color: #ffffff;
+}
+
+/* LOGIN */
+
+.Titulo-login {
+  color: #7b1831;
+}
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 /* Ajustes para celulares */
