@@ -99,8 +99,15 @@ p {
 
 .boton-vino {
   background-color: #7b1831;
+  border: 1px solid #7b1831;
   color: white;
-} 
+}
+
+.boton-vino:hover {
+  background-color: #4a1c24;
+  border-color: #4a1c24;
+  color: white;
+}
 /* footer */
 .footer {
   width: 100%;
@@ -112,7 +119,7 @@ p {
   padding: 30px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   justify-content: space-around;
   align-items: center;
   padding: 50px;
