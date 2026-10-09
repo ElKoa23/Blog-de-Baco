@@ -108,6 +108,128 @@ p {
   border-color: #4a1c24;
   color: white;
 }
+
+/* Sobre nosotros */
+.pagina-sobre {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.sobre-contenido {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+}
+
+.sobre-titulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sobre-subtitulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sobre-introduccion {
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
+  color: #2f2024;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.sobre-frase {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vino);
+  background-color: #f8dfe3;
+  color: var(--vino-oscuro);
+  font-size: 1.05rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.fotos-sobre {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Estilos para tarjetas de perfil de Nosotros */
+.perfil-card {
+  width: auto;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 8px 20px rgb(74 28 36 / 12%);
+  text-align: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.perfil-card:hover {
+  box-shadow: 0 12px 24px rgb(74 28 36 / 20%);
+}
+
+.perfil-foto {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 1.5rem auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-datos {
+  padding: 1rem 0.75rem 1.25rem;
+}
+
+.perfil-nombre {
+  margin: 0;
+  color: var(--vino);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .fotos-sobre {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre-contenido {
+    padding-top: 2rem;
+  }
+
+  .fotos-sobre {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .perfil-foto {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .fotos-sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* footer */
 .footer {
   width: 100%;
