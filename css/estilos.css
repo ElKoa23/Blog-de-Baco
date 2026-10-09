@@ -100,7 +100,31 @@ p {
 .boton-vino {
   background-color: #7b1831;
   color: white;
-} 
+
+}
+
+/* Sobre nosotros */
+.header-sobre {display: flex;
+flex-wrap: wrap;
+background-color: #7b1831;
+}
+
+.lista-sobre ul li {display: inline-block;
+list-style: none;
+text-decoration: none;
+}
+.lista-sobre ul li a {text-decoration: none;color: white;}
+.img-sobre img{width: 100px;}
+.fotos-sobre {display: flex;}
+
+.fotos-sobre img {
+  width: 150px;           
+  height: 150px;          
+  border-radius: 50%;     
+  object-fit: cover;      
+}
+
+origin/dev
 /* footer */
 .footer {
   width: 100%;
