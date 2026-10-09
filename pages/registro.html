@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>Suscribite</title>
+    <!-- Bootstrap 5.3.8 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    />
+    <!-- CSS propio -->
+    <link
+        rel="stylesheet"
+        href="../css/estilos.css"
+    />
+</head>
+<body class="fondo-acceso">
+    <header>
+        <!-- NavBar Genérico -->
+        <h2>Navbar</h2>
+    </header>
+    <main class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- SECCIÓN PRINCIPAL -->
+            <section
+                class="col-12 col-lg-7 d-flex align-items-center justify-content-center p-4"
+            >
+                <div class="formulario-login w-100">
+                    <h1 class="h2">
+                        Suscribite al Blog de Baco
+                    </h1>
+                    <p>
+                        “Mantenete al día con novedades, historias y experiencias del mundo del vino”
+                    </p>
+                    <!-- BOTÓN TEMPORAL -->
+                    <button
+                        type="button"
+                        class="btn btn-danger w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-suscripcion"
+                    >
+                        Suscribirme
+                    </button>
+                </div>
+            </section>
+<!-- IMAGEN -->
+<aside class="col-lg-4 d-none d-lg-flex align-items-center p-4">
+    <div class="card bg-dark text-white w-100">
+        <img
+            src="https://images.unsplash.com/photo-1586213356756-44e3baf415a4?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img imagen-registro"
+            alt="Una copa de vino junto a una computadora"
+        />
+        <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+            <p class="card-title h4 text-white mb-4">
+                “Un vino, nuevas historias”
+            </p>
+        </div>
+    </div>
+</aside>
+</aside>
+    </main>
+    <!-- MODAL DE SUSCRIPCION -->
+    <div
+        class="modal fade"
+        id="modal-suscripcion"
+        tabindex="-1"
+        aria-labelledby="titulo-modal-suscripcion"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+        >
+            <div class="modal-content">
+                <!-- CABECERA DEL MODAL -->
+                <div class="modal-header">
+                    <h1
+                        class="modal-title fs-5"
+                        id="titulo-modal-suscripcion"
+                    >
+                        Suscribite al Blog de Baco
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                    >
+                    </button>
+                </div>
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body">
+                    <p>
+                        Completá tus datos para recibir
+                        novedades del mundo del vino.
+                    </p>
+                    <form
+                        id="form-suscripcion"
+                    >
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="nombre"
+                            >
+                                Nombre
+                            </label>
+                            <input
+                                class="form-control"
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="50"
+                                required
+                            />
+                        </div>
+                        <!-- CORREO ELECTRÓNICO -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="email"
+                            >
+                                Correo electrónico
+                            </label>
+                            <input
+                                class="form-control"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nombre@correo.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <!-- BOTONES -->
+                        <div
+                            class="d-flex justify-content-end gap-2"
+                        >
+                            <!-- BOTÓN CERRAR -->
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Cerrar
+                            </button>
+                            <!-- BOTÓN ENVIAR -->
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                            >
+                                Suscribirme
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio del Footer -->
+    <footer></footer>
+    <!-- Scripts Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    >
+    </script>
+</body>
+</html>
