@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Baco</title>
+    <title>Iniciar sesión</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -143,11 +143,13 @@
         </div>
     </div>
     </header>
-    <main class="container flex-grow-1">
-      <div class="row">
-        <section class="col-12 col-lg-6 d-flex justify-content-center">
+    <main class="container-fluid">
+      <div class="row min-vh-100">
+        <section
+          class="col-12 col-lg-7 d-flex align-items-center justify-content-center p-4"
+        >
           <div class="formulario-login w-100">
-            <h1 class="Titulo-login">Bienvenido de nuevo</h1>
+            <h1 class="h2">Bienvenido de nuevo</h1>
             <p>Ingresá tus datos para acceder a tu cuenta</p>
 
             <form id="form-login" onsubmit="event.preventDefault()">
@@ -178,7 +180,7 @@
               </div>
 
               <div
-                class="d-flex justify-content-between align-items-center mb-3"
+                class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3"
               >
                 <div class="form-check">
                   <input
@@ -192,31 +194,24 @@
                   </label>
                 </div>
 
-                <button
-                  type="button"
-                  class="btn btn-link p-0"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalRecuperar"
-                >
-                  ¿Olvidaste tu contraseña?
-                </button>
+                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
               </div>
 
-              <button type="submit" class="btn boton-vino w-100">
+              <button type="submit" class="btn btn-danger w-100">
                 Iniciar sesión
               </button>
             </form>
 
             <p class="text-center my-4">O continuá con</p>
 
-            <div class="row">
-              <div class="col-12 col-lg-6">
+            <div class="row g-2">
+              <div class="col-6">
                 <button type="button" class="btn btn-outline-secondary w-100">
                   <a href="../404.html"  class="text-decoration-none text-dark" >Google</a>
                 </button>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-6">
                 <button type="button" class="btn btn-outline-secondary w-100">
                   <a href="../404.html" class="text-decoration-none text-dark" >Facebook</a>
                 </button>
@@ -229,7 +224,7 @@
         </section>
 
         <!-- La imagen se oculta en celulares y aparece junto al formulario desde pantallas grandes. -->
-        <aside class="col-12 col-lg-6 d-none d-lg-block">
+        <aside class="col-lg-4 d-none d-lg-flex align-items-center p">
           <div class="card bg-dark text-white w-100">
             <img
               src="https://plus.unsplash.com/premium_photo-1719997502353-88e25b8f266c?w=800&auto=format&fit=crop&q=80"
@@ -249,58 +244,6 @@
         </aside>
       </div>
     </main>
-    <!-- Modal para recuperar contraseña -->
-    <div
-      class="modal fade"
-      id="modalRecuperar"
-      aria-labelledby="tituloRecuperar"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="tituloRecuperar">
-              Recuperar contraseña
-            </h2>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <p>
-              Ingresá tu correo para solicitar un enlace con el que puedas crear
-              una nueva contraseña.
-            </p>
-
-            <form id="form-recuperar">
-              <div class="mb-3">
-                <label for="email-recuperar" class="form-label">
-                  Correo electrónico
-                </label>
-
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email-recuperar"
-                  name="email"
-                  placeholder="nombre@correo.com"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-
-              <button type="submit" class="btn boton-vino w-100">
-                Enviar enlace
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Inicio del Footer -->
     <footer class="footer">
