@@ -29,7 +29,6 @@
 
         <div class="collapse navbar-collapse" id="menuOpciones">
 
-<<<<<<< HEAD
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="../paginas/galeria.html">Galería</a></li>
@@ -39,12 +38,112 @@
             
             <div class="d-flex align-items-center mt-3 mt-lg-0">
                 <button type="button" class="btn btn-light text-dark fw-semibold me-2"><a href="../paginas/login.html" class="btn-light text-decoration-none text-dark fw-semibold">Iniciar sesión</a></button>
-                <button type="button" class="btn btn-danger fw-semibold"><a href="../404.html" class="btn-light text-decoration-none text-white fw-semibold">Suscribirme</a></button>
+                <button type="button" class="btn btn-danger fw-semibold" data-bs-toggle="modal"
+                  data-bs-target="#modal-suscripcion" >Suscribirme</button>
             </div>
             
           </div>
     </div>
 </nav>
+    <div
+        class="modal fade"
+        id="modal-suscripcion"
+        tabindex="-1"
+        aria-labelledby="titulo-modal-suscripcion"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+        >
+            <div class="modal-content">
+                <!-- CABECERA DEL MODAL -->
+                <div class="modal-header">
+                    <h1
+                        class="modal-title fs-5"
+                        id="titulo-modal-suscripcion"
+                    >
+                        Suscribite al Blog de Baco
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                    >
+                    </button>
+                </div>
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body">
+                    <p>
+                        Completá tus datos para recibir
+                        novedades del mundo del vino.
+                    </p>
+                    <form
+                        id="form-suscripcion"
+                    >
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="nombre"
+                            >
+                                Nombre
+                            </label>
+                            <input
+                                class="form-control"
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="50"
+                                required
+                            />
+                        </div>
+                        <!-- CORREO ELECTRÓNICO -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="email"
+                            >
+                                Correo electrónico
+                            </label>
+                            <input
+                                class="form-control"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nombre@correo.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <!-- BOTONES -->
+                        <div
+                            class="d-flex justify-content-end gap-2"
+                        >
+                            <!-- BOTÓN CERRAR -->
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Cerrar
+                            </button>
+                            <!-- BOTÓN ENVIAR -->
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                            >
+                                Suscribirme
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </header>
     <main class="container flex-grow-1">
       <div class="container">
@@ -187,30 +286,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-=======
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="4"></textarea>
-            </div>
-
-            <button type="submit" class="btn boton-vino">Enviar mensaje</button>
-          </form>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <h2>Nuestra ubicacion</h2>
-          <p class="mb-3">Tucuman, Argentina</p>
-
-          <iframe
-            class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105916739557!2d-65.207167!3d-26.836583299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1790298911670!5m2!1ses-419!2sar"
-            width="100%"
-            height="350"
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
-    </div>
->>>>>>> 6b45ce6554dc86b8bd9d277bd022db28e12c9bd1
   </body>
 </html>
