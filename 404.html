@@ -13,6 +13,136 @@
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body class="pagina-error">
+         <header>
+  <!-- Inicio del Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-vino">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./imagenes/Logo.jpeg" id="mi-logo" class="img-logo animacion-girar" alt="Logo" height="90">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuOpciones" aria-controls="menuOpciones" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuOpciones">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/sobre-nosotros.html">Acerca de nosotros</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center mt-3 mt-lg-0">
+                <button type="button" class="btn btn-light text-dark fw-semibold me-2"><a href="./paginas/login.html" class="btn-light text-decoration-none text-dark fw-semibold">Iniciar sesión</a></button>
+                <button type="button" class="btn btn-danger fw-semibold" data-bs-toggle="modal"
+                  data-bs-target="#modal-suscripcion" >Suscribirme</button>
+            </div>
+            
+          </div>
+    </div>
+</nav>
+    <div
+        class="modal fade"
+        id="modal-suscripcion"
+        tabindex="-1"
+        aria-labelledby="titulo-modal-suscripcion"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+        >
+            <div class="modal-content">
+                <!-- CABECERA DEL MODAL -->
+                <div class="modal-header">
+                    <h1
+                        class="modal-title fs-5"
+                        id="titulo-modal-suscripcion"
+                    >
+                        Suscribite al Blog de Baco
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                    >
+                    </button>
+                </div>
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body">
+                    <p>
+                        Completá tus datos para recibir
+                        novedades del mundo del vino.
+                    </p>
+                    <form
+                        id="form-suscripcion"
+                    >
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="nombre"
+                            >
+                                Nombre
+                            </label>
+                            <input
+                                class="form-control"
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="50"
+                                required
+                            />
+                        </div>
+                        <!-- CORREO ELECTRÓNICO -->
+                        <div class="mb-3">
+                            <label
+                                class="form-label"
+                                for="email"
+                            >
+                                Correo electrónico
+                            </label>
+                            <input
+                                class="form-control"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nombre@correo.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <!-- BOTONES -->
+                        <div
+                            class="d-flex justify-content-end gap-2"
+                        >
+                            <!-- BOTÓN CERRAR -->
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Cerrar
+                            </button>
+                            <!-- BOTÓN ENVIAR -->
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                            >
+                                Suscribirme
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
     <main
       class="container min-vh-100 d-flex align-items-center justify-content-center py-5"
     >
