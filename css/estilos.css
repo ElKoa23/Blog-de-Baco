@@ -175,6 +175,7 @@ p {
 
 .boton-vino {
   background-color: #7b1831;
+  border: 1px solid #7b1831;
   color: white;
 }
 
@@ -322,6 +323,11 @@ p {
   padding: 50px;
   text-align: center;
   background-color: #7b1831;
+  color: white;
+}
+.footer-enlace {
+  display: flex;
+  flex-direction: column;
 }
 .img-footer img {
   width: 200px;
@@ -365,6 +371,13 @@ ul {
 }
 .footer-col {
   color: white;
+}
+.img-carrusel-cata {
+  height: 50vh;
+}
+.img-carrusel-cata img {
+  object-fit: cover;
+  height: 50vh;
 }
 .footer p {
   color: white;
