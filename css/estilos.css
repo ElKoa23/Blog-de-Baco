@@ -4,6 +4,82 @@
   margin: 0;
 }
 
+.navbar-vino {
+            background: linear-gradient(to right, #851c2f, #851c2f);
+            padding: 15px 0;
+        }
+.img-logo{
+  border-radius: 30px;
+}
+@keyframes girar {
+  0% { 
+    transform: rotate(0deg); 
+    }
+ 25% { 
+    transform: rotate(1080deg); 
+    }
+ 50% { 
+    transform: rotate(0deg); 
+    }
+ 100% { 
+    transform: rotate(0deg); 
+  }
+}
+.animacion-girar {
+  animation: girar 20s ease-in-out infinite;
+  animation-delay: 5s;
+}     
+.navbar-vino .nav-link {
+color: rgba(255, 255, 255, 0.85) ;
+ font-size: 0.95rem;
+ margin-right: 15px;
+ font-weight: 500;
+}
+
+.navbar-vino .nav-link:hover {
+ color: #ffffff;
+}
+
+.nav-link.activo-subrayado {
+ position: relative;
+ color: #fef6f6;
+}
+.nav-link.activo-subrayado::after {
+ content: '';
+ position: absolute;
+ left: 8px;
+ bottom: 0;
+ width: 70%;
+ height: 2px;
+ background-color: #b4173e; 
+}
+
+.btn-blanco {
+ background-color: #ffffff;
+ color: #333333;
+ font-weight: 600;
+ font-size: 0.9rem;
+ border-radius: 8px; 
+ padding: 8px 20px;
+}
+.btn-blanco:hover {
+ background-color: #e6e6e6;
+}
+
+.btn-rojo {
+ background-color: #ce2648;
+ color: #ffffff;
+ font-weight: 600;
+ font-size: 0.9rem;
+ border-radius: 8px;
+ padding: 8px 20px;
+ border: none;
+}
+.btn-rojo:hover {
+ background-color: #77172a;
+ color: #ffffff;
+}
+        
 .img-carousel img {
   object-fit: cover;
   height: 50vh;
@@ -99,13 +175,161 @@ p {
 
 .boton-vino {
   background-color: #7b1831;
+  border: 1px solid #7b1831;
   color: white;
 }
+<<<<<<< HEAD
+
+.boton-vino:hover {
+  background-color: #4a1c24;
+  border-color: #4a1c24;
+  color: white;
+}
+
+/* Sobre nosotros */
+.pagina-sobre {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.sobre-contenido {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+}
+
+.sobre-titulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sobre-subtitulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sobre-introduccion {
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
+  color: #2f2024;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.sobre-frase {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vino);
+  background-color: #f8dfe3;
+  color: var(--vino-oscuro);
+  font-size: 1.05rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.fotos-sobre {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Estilos para tarjetas de perfil de Nosotros */
+.perfil-card {
+  width: auto;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 8px 20px rgb(74 28 36 / 12%);
+  text-align: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.perfil-card:hover {
+  box-shadow: 0 12px 24px rgb(74 28 36 / 20%);
+}
+
+.perfil-foto {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 1.5rem auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-datos {
+  padding: 1rem 0.75rem 1.25rem;
+}
+
+.perfil-nombre {
+  margin: 0;
+  color: var(--vino);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .fotos-sobre {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre-contenido {
+    padding-top: 2rem;
+  }
+
+  .fotos-sobre {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .perfil-foto {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .fotos-sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+=======
 
 .footer {
   flex-direction: column;
   margin: 0 auto;
   margin-bottom: 2rem;
+>>>>>>> 6b45ce6554dc86b8bd9d277bd022db28e12c9bd1
   background-color: #7b1831;
   color: white;
 }
@@ -114,6 +338,17 @@ p {
   flex-direction: column;
 }
 .img-footer img {
+<<<<<<< HEAD
+  width: 200px;
+}
+
+.footer-enlace {
+  display: flex;
+  flex-direction: column;
+}
+.img-footer img {
+=======
+>>>>>>> 6b45ce6554dc86b8bd9d277bd022db28e12c9bd1
   border-radius: 25px;
   width: 100px;
 }
@@ -130,10 +365,18 @@ p {
   color: white;
 }
 
+<<<<<<< HEAD
+.footer h4 {
+  color: white;
+}
+.footer h6 {
+  color: white;
+=======
 .footer .flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
+>>>>>>> 6b45ce6554dc86b8bd9d277bd022db28e12c9bd1
 }
 .centrado {
   display: flex;
@@ -163,6 +406,140 @@ ul {
   gap: 10px;
 }
 
+<<<<<<< HEAD
+/* Colores principales */
+:root {
+  --vino: #7b1831;
+  --vino-oscuro: #4a1c24;
+  --vino-claro: #f3e9ea;
+}
+
+/* Estilos para Login */
+.fondo-acceso {
+  background-color: var(--vino-claro);
+}
+
+.fondo-acceso a {
+  color: var(--vino);
+}
+
+.fondo-acceso a:hover {
+  color: var(--vino-oscuro);
+}
+
+.fondo-acceso .btn-primary {
+  background-color: var(--vino);
+  border-color: var(--vino);
+}
+
+.fondo-acceso .btn-primary:hover {
+  background-color: var(--vino-oscuro);
+  border-color: var(--vino-oscuro);
+}
+
+.panel-vino {
+  background-color: var(--vino-oscuro);
+}
+
+.panel-vino p {
+  color: white;
+}
+
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: 65vh;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Estilos para error 404 */
+.pagina-error {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.error-contenido {
+  width: 100%;
+  max-width: 672px;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(123, 24, 49, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(74, 28, 36, 0.14);
+}
+
+.error-copa {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.error-numero {
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.error-titulo {
+  margin-top: 1rem;
+  color: var(--vino-oscuro);
+}
+
+.pagina-error .error-descripcion {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: #5f5054;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.pagina-error .btn-error {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--vino);
+  border: 1px solid var(--vino);
+  color: white;
+  font-weight: 600;
+}
+
+.pagina-error .btn-error:hover {
+  background-color: var(--vino-oscuro);
+  border-color: var(--vino-oscuro);
+  color: #ffffff;
+}
+
+/* LOGIN */
+
+.Titulo-login {
+  color: #7b1831;
+}
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 575.98px) {
+  .error-contenido {
+    padding: 2rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .error-copa {
+    font-size: 3rem;
+  }
+
+  .error-numero {
+    font-size: 5rem;
+=======
 @media (min-width: 768px) {
   .footer {
     flex-direction: row;
@@ -281,5 +658,6 @@ ul {
   .error-contenido {
     padding: 2rem 1.25rem;
     border-radius: 1rem;
+>>>>>>> 6b45ce6554dc86b8bd9d277bd022db28e12c9bd1
   }
 }
