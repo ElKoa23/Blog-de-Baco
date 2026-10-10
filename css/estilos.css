@@ -102,13 +102,155 @@ p {
   color: white;
 }
 
-.footer {
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  background-color: #7b1831;
+.boton-vino:hover {
+  background-color: #4a1c24;
+  border-color: #4a1c24;
   color: white;
 }
+
+/* Sobre nosotros */
+.pagina-sobre {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.sobre-contenido {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+}
+
+.sobre-titulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sobre-subtitulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sobre-introduccion {
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
+  color: #2f2024;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.sobre-frase {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vino);
+  background-color: #f8dfe3;
+  color: var(--vino-oscuro);
+  font-size: 1.05rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.fotos-sobre {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Estilos para tarjetas de perfil de Nosotros */
+.perfil-card {
+  width: auto;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 8px 20px rgb(74 28 36 / 12%);
+  text-align: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.perfil-card:hover {
+  box-shadow: 0 12px 24px rgb(74 28 36 / 20%);
+}
+
+.perfil-foto {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 1.5rem auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-datos {
+  padding: 1rem 0.75rem 1.25rem;
+}
+
+.perfil-nombre {
+  margin: 0;
+  color: var(--vino);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .fotos-sobre {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre-contenido {
+    padding-top: 2rem;
+  }
+
+  .fotos-sobre {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .perfil-foto {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .fotos-sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #7b1831;
+}
+.img-footer img {
+  width: 200px;
+}
+
 .footer-enlace {
   display: flex;
   flex-direction: column;
@@ -130,10 +272,11 @@ p {
   color: white;
 }
 
-.footer .flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.footer h4 {
+  color: white;
+}
+.footer h6 {
+  color: white;
 }
 .centrado {
   display: flex;
@@ -147,13 +290,6 @@ ul {
 .footer-col {
   color: white;
 }
-.img-carrusel-cata {
-  height: 50vh;
-}
-.img-carrusel-cata img {
-  object-fit: cover;
-  height: 50vh;
-}
 .footer p {
   color: white;
 }
@@ -163,21 +299,14 @@ ul {
   gap: 10px;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    padding: 30px;
-  }
-}
-
+/* Colores principales */
 :root {
   --vino: #7b1831;
   --vino-oscuro: #4a1c24;
   --vino-claro: #f3e9ea;
 }
 
+/* Estilos para Login */
 .fondo-acceso {
   background-color: var(--vino-claro);
 }
@@ -205,34 +334,43 @@ ul {
 }
 
 .panel-vino p {
-  color: #ffffff;
-  opacity: 0.85;
+  color: white;
 }
 
-/* Página de error 404  */
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: 65vh;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Estilos para error 404 */
 .pagina-error {
-  background:
-    radial-gradient(circle at top, rgba(123, 24, 49, 0.12), transparent 52%),
-    var(--vino-claro);
+  background-color: var(--vino-claro);
   color: #2f2024;
 }
 
 .error-contenido {
-  width: min(100%, 42rem);
-  padding: clamp(2rem, 6vw, 4rem);
+  width: 100%;
+  max-width: 672px;
+  padding: 4rem;
   background-color: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(123, 24, 49, 0.18);
-  border-radius: 1.5rem;
-  box-shadow: 0 1.25rem 3rem rgba(74, 28, 36, 0.14);
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(74, 28, 36, 0.14);
 }
 
 .error-copa {
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: 6rem;
   line-height: 1;
 }
 
 .error-numero {
-  font-size: clamp(5rem, 18vw, 9rem);
+  font-size: 9rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -240,7 +378,6 @@ ul {
 .error-titulo {
   margin-top: 1rem;
   color: var(--vino-oscuro);
-  font-size: clamp(1.75rem, 5vw, 2.75rem);
 }
 
 .pagina-error .error-descripcion {
@@ -255,31 +392,44 @@ ul {
   padding: 0.75rem 1.5rem;
   background-color: var(--vino);
   border: 1px solid var(--vino);
-  color: #ffffff;
+  color: white;
   font-weight: 600;
 }
 
-.pagina-error .btn-error:hover,
-.pagina-error .btn-error:focus-visible {
+.pagina-error .btn-error:hover {
   background-color: var(--vino-oscuro);
   border-color: var(--vino-oscuro);
   color: #ffffff;
 }
 
+/* LOGIN */
+
+.Titulo-login {
+  color: #7b1831;
+}
 .formulario-login {
   max-width: 420px;
 }
 
 .imagen-login {
   width: 100%;
-  height: 65vh;
+  height: auto;
   max-height: 600px;
   object-fit: cover;
 }
 
+/* Ajustes para celulares */
 @media (max-width: 575.98px) {
   .error-contenido {
     padding: 2rem 1.25rem;
-    border-radius: 1rem;
+    border-radius: 16px;
+  }
+
+  .error-copa {
+    font-size: 3rem;
+  }
+
+  .error-numero {
+    font-size: 5rem;
   }
 }
