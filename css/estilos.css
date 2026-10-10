@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.img-carousel img {
+  object-fit: cover;
+  height: 50vh;
+}
+
+.img-entrada {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+}
+/* Galeria */
+.portada-galeria {
+  position: relative;
+  height: 400px;
+}
+
+.portada-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.texto-portada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.tarjeta-galeria img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.texto-portada h1 {
+  color: white;
+  margin: 0;
+}
+
+.tarjeta-galeria h3 {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #7b1831;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+}
+
+.texto-portada p {
+  color: white;
+  margin-top: 10px;
+}
+
+.tarjeta-galeria {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.categorias button {
+  background-color: white;
+  border: 1px solid #7b1831;
+  color: #7b1831;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.categorias button:hover {
+  background-color: #7b1831;
+  color: white;
+}
+
+/* CONTACTO */
+
+.titulo-contacto h1 {
+  color: #7b1831;
+}
+
+.boton-vino {
+  background-color: #7b1831;
+  border: 1px solid #7b1831;
+  color: white;
+}
+
+.boton-vino:hover {
+  background-color: #4a1c24;
+  border-color: #4a1c24;
+  color: white;
+}
+
+/* Sobre nosotros */
+.pagina-sobre {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.sobre-contenido {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+}
+
+.sobre-titulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sobre-subtitulo {
+  margin-bottom: 1.25rem;
+  color: var(--vino);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sobre-introduccion {
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
+  color: #2f2024;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.sobre-frase {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vino);
+  background-color: #f8dfe3;
+  color: var(--vino-oscuro);
+  font-size: 1.05rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.fotos-sobre {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Estilos para tarjetas de perfil de Nosotros */
+.perfil-card {
+  width: auto;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 8px 20px rgb(74 28 36 / 12%);
+  text-align: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.perfil-card:hover {
+  box-shadow: 0 12px 24px rgb(74 28 36 / 20%);
+}
+
+.perfil-foto {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 1.5rem auto 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-datos {
+  padding: 1rem 0.75rem 1.25rem;
+}
+
+.perfil-nombre {
+  margin: 0;
+  color: var(--vino);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .fotos-sobre {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre-contenido {
+    padding-top: 2rem;
+  }
+
+  .fotos-sobre {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .perfil-foto {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .fotos-sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #7b1831;
+}
+.img-footer img {
+  width: 200px;
+}
+
+.footer-enlace {
+  display: flex;
+  flex-direction: column;
+}
+.img-footer img {
+  border-radius: 25px;
+  width: 100px;
+}
+
+.footer-enlace ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-enlace2 {
+  display: flex;
+  flex-direction: row;
+}
+.footer-hiper ul li a svg {
+  color: white;
+}
+
+.footer h4 {
+  color: white;
+}
+.footer h6 {
+  color: white;
+}
+.centrado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col {
+  color: white;
+}
+.footer p {
+  color: white;
+}
+.lista-hiper ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Colores principales */
+:root {
+  --vino: #7b1831;
+  --vino-oscuro: #4a1c24;
+  --vino-claro: #f3e9ea;
+}
+
+/* Estilos para Login */
+.fondo-acceso {
+  background-color: var(--vino-claro);
+}
+
+.fondo-acceso a {
+  color: var(--vino);
+}
+
+.fondo-acceso a:hover {
+  color: var(--vino-oscuro);
+}
+
+.fondo-acceso .btn-primary {
+  background-color: var(--vino);
+  border-color: var(--vino);
+}
+
+.fondo-acceso .btn-primary:hover {
+  background-color: var(--vino-oscuro);
+  border-color: var(--vino-oscuro);
+}
+
+.panel-vino {
+  background-color: var(--vino-oscuro);
+}
+
+.panel-vino p {
+  color: white;
+}
+
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: 65vh;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Estilos para error 404 */
+.pagina-error {
+  background-color: var(--vino-claro);
+  color: #2f2024;
+}
+
+.error-contenido {
+  width: 100%;
+  max-width: 672px;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(123, 24, 49, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(74, 28, 36, 0.14);
+}
+
+.error-copa {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.error-numero {
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.error-titulo {
+  margin-top: 1rem;
+  color: var(--vino-oscuro);
+}
+
+.pagina-error .error-descripcion {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: #5f5054;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.pagina-error .btn-error {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--vino);
+  border: 1px solid var(--vino);
+  color: white;
+  font-weight: 600;
+}
+
+.pagina-error .btn-error:hover {
+  background-color: var(--vino-oscuro);
+  border-color: var(--vino-oscuro);
+  color: #ffffff;
+}
+
+/* LOGIN */
+
+.Titulo-login {
+  color: #7b1831;
+}
+.formulario-login {
+  max-width: 420px;
+}
+
+.imagen-login {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 575.98px) {
+  .error-contenido {
+    padding: 2rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .error-copa {
+    font-size: 3rem;
+  }
+
+  .error-numero {
+    font-size: 5rem;
+  }
+}
